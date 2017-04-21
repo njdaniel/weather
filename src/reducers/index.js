@@ -2,10 +2,10 @@
  * Created by nicholas on 4/21/17.
  */
 import {combineReducers} from 'redux';
-
+import WeatherReducer from './reducer_weather';
 
 const rootReducer = combineReducers({
-
+    state: (state = {}) => state
 });
 
 export default rootReducer;
