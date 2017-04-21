@@ -8,6 +8,7 @@ export default class SearchBar extends Component {
         return (
             <form className="input-group">
                 <input/>
+                <span></span>
             </form>
         );
     }
