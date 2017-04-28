@@ -2,6 +2,7 @@
  * Created by nicholas on 4/28/17.
  */
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 export default class WeatherList extends Component {
     render() {
@@ -10,6 +11,9 @@ export default class WeatherList extends Component {
                 <thead>
                     <tr>
                         <th>City</th>
+                        <th>Temperature</th>
+                        <th>Pressure</th>
+                        <th>Humidity</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -18,4 +22,8 @@ export default class WeatherList extends Component {
             </table>
         )
     }
+}
+
+function mapStateToProps(state) {
+    return { weather: state.weather }
 }
