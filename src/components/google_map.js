@@ -1,9 +1,9 @@
 /**
  * Created by nicholas on 5/1/17.
  */
-import React, { Compoenent } from 'react';
+import React, { Component } from 'react';
 
-class GoogleMap extends Compoenent {
+class GoogleMap extends Component {
 
 }
 
