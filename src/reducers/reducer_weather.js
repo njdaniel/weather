@@ -8,6 +8,7 @@ export default function (state = [], action) {
         case FETCH_WEATHER:
             // Add to end
             // return state.concat([action.payload.data]);
+
             // Add to beginning
             return [ action.payload.data, ...state]; // [city, city, city]
     }
